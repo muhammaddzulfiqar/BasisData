@@ -39,6 +39,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#tugas1" class="page-scroll">Tugas 1</a></li>
         <li><a href="#tugas2" class="page-scroll">Tugas 2</a></li>
+        <li><a href="#tugas3" class="page-scroll">Tugas 3</a></li>
         <!-- <li><a href="">About3</a></li> -->
       </ul>
     </div>
@@ -176,6 +177,140 @@ Berupa penjelasan mengenai indeks sebenarnya yang memutuskan untuk digunakan MyS
     </div> 
     </section>
     <!-- akhir tugas2 -->
+    
+
+    <!-- tugas 3 -->
+    <section class="about" id="tugas3">
+    <div class="container">
+      <div class="row">
+      <div class="col-sm-12">
+        <h2 class="text-center">Proses Desain Database</h2>
+        <hr>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="pKiri"> 
+  <img src="img/lifecycle.gif"><br>
+      <strong>Lifecycle Database</strong> <br> <br>
+      -System Defenition <br>
+Mendefinisikan Scope dari sistem basis data, pemakai dan aplikasi Antarmuka untuk pemakai, batasan response time, kebutuhan penyimpan dan pemrosesan diidentifikasi. <br> <br>
+-Database Design <br>
+Pada akhir dari tahap ini , desain konseptual, desain logika dan fisik dari sistem basis data dari DBMS sudah siap. <br> <br>
+-Database Implementation <br>
+Meliputi proses menentukan definisi basis data eksternal, konseptual dan internal, membuat file basis data kosong dan implementasi aplikasi perangkat lunak. <br> <br>
+-Loading or Data Conversion <br>
+Basis data dipopulasikan dengan menyimpan data langsung atau mengubah file yang sudah ada ke format sistem basis data. <br> <br>
+-Application Conversion <br>
+Aplikasi perangkat lunak dari sistem lama dikonversikan ke sistem baru. <br> <br>
+-Testing and Validation <br>
+Sistem baru diuji coba dan divalidasi <br> <br>
+-Operation <br>
+Sistem basis data dan aplikasi dioperasikan. Biasanya sistem lama dan baru dioperasikan secara paralel dalam beberapa waktu. <br> <br>
+-Monitoring and Maintenance <br>
+Selama tahap operasional, sistem secara tetap dimonitor dan dipelihara. Perubahan dan pengembangan dapat terjadi baik pada isi data maupun aplikasi perangkat lunak <br> <br>
+<img src="img/siklus.jpg"><br> <br>
+         <strong> TAHAP 1: PENGUMPULAN DAN ANALISIS KEBUTUHAN DATA</strong><br> <br>
+
+
+3 Pendekatan Dalam Manajemen Kebutuhan : <br>
+
+a) Centrelized<br>
+b) View Integration <br>
+c) Kombinasi keduanya <br> <br>
+
+<strong>TAHAP 2: DESAIN DATABASE KONSEPTUAL </strong><br>
+
+A. DESAIN SKEMA KONSEPTUAL <br>
+▪ Memberikan gambaran yang lengkap dari struktur basis data yaitu arti, hubungan, dan batasan-batasan. <br>
+▪ Conceptual schema bersifat tetap <br>
+▪ Alat komunikasi antar pemakai basis data, designer, dan analis. <br>
+▪ Harus bersifat: ✓Mampu menyatakan relationship, batasan-batasan ✓Diagram ✓Formal, minimum dalam menyatakan spesifikasi data (tidak ada duplikasi) ✓Simple <br> <br>
+
+
+        </div>
+        <div class="col-sm-6">
+         <p class="pKanan">
+B. DESAIN TRANSAKSI DAN APLIKASI Transaksi dan User Interface <br>
+▪ Pada saat basis data didesain, aplikasi dari transaksi utama harus sudah diketahui <br>
+▪ Transaksi-transaksi baru dapat didefinisikan kemudian <br>
+▪ Tentukan karakteristik dari transaksi dan periksa apakah basis data sudah memuat semua informasi untuk melaksanakan transaksi<br>
+▪ Transaksi dapat dibagi dalam 3 bagian yaitu: retrieval, update, mixed<br>
+▪ Tahap 2A dan 2B sebaiknya dilaksanakan secara paralel dengan menggunakan umpan balik agar didapat skema desain dan transaksi yang stabil<br><br>
+
+DESAIN TRANSAKSI<br>
+Teknik yang umum digunakan adalah mengidentifikasi parameter input/output dan aliran fungsi internal. Transaksi dikelompokkan dalam 3 kategori :<br>
+1) Retrieval Transaction Untuk menampilkan data ke layar atau untuk produksi pelaporan.<br>
+2) Update Transaction Untuk memasukkan data baru atau memodifikasi data yang sudah ada pada basis data.<br>
+3) Mixed Transaction Untuk aplikasi yang komplek yang melakukan retrieval dan update. Contoh : Pemesanan tiket secara online, retrieval transaction → menampilkan daftar semua pesawat, update transaction → booking tempat duduk pada jalur tertentu<br><br>
+
+DESAIN USER INTER FACE<br>
+Beberapa aturan pokok dalam merancang User Interface: <br>
+1. Pemberian nama form jelas, menerangkan kegunaan dari form dan laporan<br>
+2. Pemberian Intruksi dapat dimengerti<br>
+3. Pengelompokan secara logik dan pengurutan fiel<br>
+4. Tampilan form/report secara visual<br>
+5. Nama field familiar<br>
+6. Pemakaian istilah dan singkatan konsisten<br>
+7. Penggunaan warna konsisten<br>
+8. Ruang yang tersedia dan cakupan untuk field pemasukan data<br>
+9. Perpindahan kurson yang tepat<br>
+10.Perbaikan kesalahan untuk karakter individual, maupun field secara keseluruhan<br>
+11.Pesan kesalahan untuk nilai yang tdk diterima<br>
+12.Fiel pilihan ditandai dengan jelas<br>
+13.Pesan penjelasan untuk field<br>
+14.Penanda akhir yang menyatakan proses sudah selesai<br><br>
+
+<strong>TAHAP 3: PEMILIHAN DBMS</strong><br>
+
+Faktor dalam Pemilihan DBMS :<br>
+▪ Faktor teknis: berhubungan dengan ketepatan DBMS yang dipilih (tipe DBMS : relational, object relational dll) Struktur penyimpanan, storage, akses path, ketersediaan user interface dan programmer, bahasa query, dll<br>
+▪ Faktor ekonomi: Biaya Software, biaya Hardware, Biaya pembuatan database dan konversi, biaya Maintenance, Personal cost ,training, operasi.<br>
+▪ Faktor Organisasi : Struktur organisasi, Personal yang terbiasa dengan sistem yang terdahulu , Ketersediaan dari service vendor<br><br>
+
+<strong>TAHAP 4 : PEMETAAN MODEL DATA</strong><br>
+
+(DESAIN BASIS DATA LOGIKA)<br>
+Membuat skema konseptual dan skema eksernal dalam model data dari DBMS terpilih.<br>
+
+Proses pemetaan dalam dua bentuk :<br>
+
+1. Pemetaan yang Tidak Tergantung pada Sistem (SystemIndependet Mapping )<br><br>
+Pada bentuk ini, pemetaan tidak mempertimbangkan karakteristik khusus atau kasus khusus yang diaplikasikan ke implementasi DBMS dari model data.<br>
+
+2. Penyesuaian Skema ke DBMS yang Spesifik (Tailoring the Schemas to Specific DBMS )<br>
+DBMS yang berbeda mengimplementasikan model data dengan menggunakan pemodelah khusus. Hasilnya merupakan pernyataan DDL dari DBMS yang dipilih<br><br>
+
+<strong>TAHAP 5 : DESAIN DATABASE SECARA FISIK</strong><br>
+
+▪ Proses pemilihan struktur penyimpanan dan jalur akses pada file-file basis data untuk mencapai penampilan yang terbaik pada bermacam aplikasi.<br>
+
+▪ Dirancang spesifikasi-spesifikasi untuk basis data yang disimpan yang berhubungan dengan struktur-struktur penyimpanan fisik, penempatan record dan jalur akses. Beberapa petunjuk dalam pemilihan perancangan basis data secara fisik :<br>
+
+1. Waktu Respon<br>
+• Waktu transaksi basis data untuk menerima respon selama eksekusi.<br>
+• Waktu respon dipengaruhi waktu akses basis data untuk data item yang ditunjuk oleh suatu transaksi.<br>
+
+2. Penggunaan Ruang Penyimpanan Jumlah ruang penyimpanan yang digunakan oleh file basis data dan struktur- struktur jalur akses.<br>
+
+3. Transaction Throughput Rata-rata jumlah transaksi yang dapat diproses per menit oleh sistem basis data, dan merupakan parameter kritis dari sistem transaksi (misal : digunakan pada pemesanan tempat di pesawat, bank, dll).<br><br>
+
+<strong>TAHAP 6 : IMPLEMENTASI BASIS DATA</strong><br>
+
+▪ DBA bersama desainer basis data menggunakan pernyataan dalam DDL , SDL (Storage Definition Language) dari DBMS terpilih digunakan untuk membuat skema basisdata dan file basis data (kosong).<br>
+▪ Basis data kemudian dipopulasikan dengan data.<br>
+▪ Jika data diubah dari sistem komputerisasi sebelumnya, rutin konversi diperlukan untuk format kembali data untuk menyimpan ke basis data baru.<br>
+▪ Transaksi basis data harus diimplementasikan dengan aplikasi yang dibuat programmer<br>
+▪ Melakukan uji coba kode porgram dengan perintah DML.<br>
+▪ Jika transaksi siap dan data disimpan ke basis data, tahap rancangan dan implementasi selesai dan tahap operasi dari sistem basis data dimulai.<br>
+
+
+</p>
+        </div> 
+    </div>
+    </div> 
+    </section>
+    <!-- akhir tugas3 -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.5.1.min.js"></script>
